@@ -22,6 +22,7 @@ function getAllData(){
             console.log("通信失敗");
             console.log(data);
         }
+    });
 }
 
 // 関数を実行
