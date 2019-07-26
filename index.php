@@ -15,21 +15,17 @@
         <p>値段</p>
         <input type="text" name="price">
       </div>
-      <div>
-        <p>説明</p>
-        <textarea type="text" name="eplain"></textarea>
-      </div>
       <input type="submit" value="送信！">
     </form>
 
     <?php
       $db = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=heroku_82cd1d27322e58c","b1f581c6e88461","77723a9e");
       print "~~~~~~~~~~fin~~~~~~";
-      $ps = $db->query("SELECT * FROM products");
+      $ps = $db->query("SELECT ** FROM products");
       print "~~~~~~~~~~fin~~~~~~";
       $r = $ps->fetch();
       print "~~~~~~~~~~fin~~~~~~";
-      print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
+      print "{$r['id']} {$r['name']} {$r['price']}";
       print "~~~~~~~~~~fin~~~~~~";
 
     ?>
