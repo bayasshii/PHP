@@ -23,23 +23,20 @@
     </form>
 
     <?php
-      $db = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=heroku_82cd1d27322e58c","b1f581c6e88461","77723a9e");
+
+      $dsn = "mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=heroku_82cd1d27322e58c;charset=utf8mb4"
+      $username="b1f581c6e8846":
+      $password="77723a9e";
+      $db = new PDO($dsn, $username, $password);
       print "~~~~~~~~~~fin~~~~~~";
+      
       $ps = $db->query("SELECT * FROM products");
       print "~~~~~~~~~~fin~~~~~~";
-      if (isset($ps)){
-        print "OK";
-        $r = $ps->fetch();
-        if (isset($r)){
-          print "~~~~~~~~~~fin~~~~~~";
-          print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
-          print "~~~~~~~~~~fin~~~~~~";
-        }else{
-          print "Nooooooooooooo11";
-        }
-      }else{
-        print "Noooooooooooooo";
-      }
+      $r = $ps->fetch();
+      print "~~~~~~~~~~fin~~~~~~";
+      print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
+      print "~~~~~~~~~~fin~~~~~~";
+
     ?>
   </body>
 </html>
