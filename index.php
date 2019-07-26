@@ -27,6 +27,7 @@
       print "~~~~~~~~~~fin~~~~~~";
       $ps = $db->query("SELECT * FROM products");
       print "~~~~~~~~~~fin~~~~~~";
+      print $ps;
       $r = $ps->fetch();
       print "~~~~~~~~~~fin~~~~~~";
       print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
