@@ -24,12 +24,12 @@
 
     <?php
 
-      $dsn = "mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=heroku_82cd1d27322e58c;charset=utf8mb4"
+      $dsn = "mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=heroku_82cd1d27322e58c;charset=utf8mb4";
       $username="b1f581c6e8846":
       $password="77723a9e";
       $db = new PDO($dsn, $username, $password);
       print "~~~~~~~~~~fin~~~~~~";
-      
+
       $ps = $db->query("SELECT * FROM products");
       print "~~~~~~~~~~fin~~~~~~";
       $r = $ps->fetch();
