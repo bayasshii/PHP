@@ -6,7 +6,7 @@
   </head>
   <body>
     <?php
-    print $_GET["text"];
+    print $_POST["text"];
     ?>
   </body>
 </html>
