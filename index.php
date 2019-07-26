@@ -24,7 +24,6 @@
       while ($r = $ps->fetch()){
         print "{$r['id']} {$r['name']} {$r['price']}<hr>";
       }
-
     ?>
   </body>
 </html>
