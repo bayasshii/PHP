@@ -9,7 +9,7 @@
       print $_POST["my_text"];
     ?>
     <?php
-      $db = new mysqli('us-cdbr-iron-east-02','b9e1f717777aa7:','d99be634','heroku_537e9386d49f912?reconnect=true');
+      $db = new mysqli('us-cdbr-iron-east-02.cleardb.net','b1f581c6e88461','77723a9e','heroku_82cd1d27322e58c');
       if ($db->connect_error) {
         echo $db->connect_error;
         exit ();
