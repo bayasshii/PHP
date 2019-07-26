@@ -27,11 +27,15 @@
       print "~~~~~~~~~~fin~~~~~~";
       $ps = $db->query("SELECT * FROM products");
       print "~~~~~~~~~~fin~~~~~~";
-      print $ps;
-      $r = $ps->fetch();
-      print "~~~~~~~~~~fin~~~~~~";
-      print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
-      print "~~~~~~~~~~fin~~~~~~";
+      if (isset($ps)){
+        print "OK";
+        $r = $ps->fetch();
+        print "~~~~~~~~~~fin~~~~~~";
+        print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
+        print "~~~~~~~~~~fin~~~~~~";
+      }else{
+        print "Noooooooooooooo";
+      }
     ?>
   </body>
 </html>
