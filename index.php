@@ -7,12 +7,18 @@
   <body>
     <p>何か喋ってよ</p>
     <form action="sns_1.php" method="post">
-      <p>名前</p>
-      <input type="text" name="name">
-      <p>値段</p>
-      <input type="text" name="price">
-      <p>説明</p>
-      <textarea type="text" name="eplain"></textarea>
+      <div>
+        <p>名前</p>
+        <input type="text" name="name">
+      </div>
+      <div>
+        <p>値段</p>
+        <input type="text" name="price">
+      </div>
+      <div>
+        <p>説明</p>
+        <textarea type="text" name="eplain"></textarea>
+      </div>
       <input type="submit" value="送信！">
     </form>
 
@@ -20,11 +26,16 @@
 
       $db = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=heroku_82cd1d27322e58c","b1f581c6e88461","77723a9e");
 
-      $ps = $db->query("SELECT * FROM products");
+      if ($db) {
 
-      $r = $ps->fetch();
+        $ps = $db->query("SELECT * FROM products");
 
-      print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
-    ?>
+        $r = $ps->fetch();
+
+        print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
+      }else{
+        print "データ取れてないみたい"
+      }
+      ?>
   </body>
 </html>
