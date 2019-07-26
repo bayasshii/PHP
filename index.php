@@ -25,14 +25,18 @@
     <?php
       $db = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=heroku_82cd1d27322e58c","b1f581c6e88461","77723a9e");
       print "~~~~~~~~~~fin~~~~~~";
-      $ps = $db->query("SELECT * FROM produc");
+      $ps = $db->query("SELECT * FROM products");
       print "~~~~~~~~~~fin~~~~~~";
       if (isset($ps)){
         print "OK";
         $r = $ps->fetch();
-        print "~~~~~~~~~~fin~~~~~~";
-        print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
-        print "~~~~~~~~~~fin~~~~~~";
+        if (isset($r)){
+          print "~~~~~~~~~~fin~~~~~~";
+          print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
+          print "~~~~~~~~~~fin~~~~~~";
+        }else{
+          print "Nooooooooooooo11";
+        }
       }else{
         print "Noooooooooooooo";
       }
