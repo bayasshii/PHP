@@ -7,8 +7,8 @@
   <body>
     <?php
 
-      $product_name = htmlspecialchars($_POST["name"], END_QUOTES);
-      $product_price = htmlspecialchars($_POST["price"], END_QUOTES);
+      $product_name = htmlspecialchars($_POST["name"],ENT_QUOTES);
+      $product_price = htmlspecialchars($_POST["price"],ENT_QUOTES);
 
       print $product_name;
       print "<hr>";
