@@ -15,7 +15,7 @@
 
       $db = new mysqli('us-cdbr-iron-east-02.cleardb.net','b1f581c6e88461','77723a9e','heroku_82cd1d27322e58c');
 
-      $db->query("INSERT INTO td (name, price, eplain))
+      $db->query("INSERT INTO products (name, price, eplain))
                   VALUES (NULL, '$product_name', '$product_price', '$product_eplain')");
       print "書き込みに成功しました！";
       print "<p><a href='/'>一覧表示へ</a></p>"
