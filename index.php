@@ -6,7 +6,7 @@
   </head>
   <body>
     <p>何か喋ってよ</p>
-    <form action="sns_1.php" method="post">
+    <form action="/" method="post">
       <div>
         <p>名前</p>
         <input type="text" name="name">
@@ -23,18 +23,20 @@
     </form>
 
     <?php
+      $product_name = htmlspecialchars($_POST["name"], END_QUOTES);
+      $product_price = htmlspecialchars($_POST["price"], END_QUOTES);
+      $product_eplain = htmlspecialchars($_POST["eplain"], END_QUOTES);
+
+      print $_POST["name"];
+      print $_POST["price"];
+      print $_POST["eplain"];
 
       $db = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=heroku_82cd1d27322e58c","b1f581c6e88461","77723a9e");
 
-      if (isset($db)){
-        $ps = $db->query("SELECT * FROM products");
-        $r = $ps->fetch();
-        print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
-        print "testおおおおお";
-      }else{
-        print "データ取れてないみたい";
-      }
-      print "~~~~~~~~~~fin~~~~~~";
+      $db->query("INSERT INTO products (id,name,price,eplain))
+                  VALUES (NULL, '$product_name', '$product_price', '$product_eplain')");
+      print "書き込みに成功しました！";
+      print "<p><a href='/'>一覧表示へ</a></p>"
     ?>
   </body>
 </html>
