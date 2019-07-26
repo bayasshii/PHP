@@ -21,7 +21,7 @@
 
       print "書き込みに成功しました！";
 
-      print "<p><a href='/'>一覧表示へ</a></p>"
+      print "<p><a href='/'>一覧表示へ</a></p>";
     ?>
 
   </body>
