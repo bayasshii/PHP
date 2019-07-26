@@ -30,7 +30,7 @@
         $ps = $db->query("SELECT * FROM products");
         $r = $ps->fetch();
         print "{$r['id']} {$r['name']} {$r['price']} {$r['eplain']}";
-        print "testおおおおお"
+        print "testおおおおお";
       }else{
         print "データ取れてないみたい";
       }
