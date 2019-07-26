@@ -9,7 +9,7 @@
       print $_POST["my_text"];
     ?>
     <?php
-      $db = new mysqli('us-cdbr-iron-east-02','b9e1f717777aa7:','d99be634','heroku_537e9386d49f912');
+      $db = new mysqli('us-cdbr-iron-east-02','b9e1f717777aa7:','d99be634','heroku_537e9386d49f912?reconnect=true');
       print $db;
     ?>
     <?php
