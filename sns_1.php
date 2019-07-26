@@ -13,7 +13,7 @@
       $product_price = htmlspecialchars($_POST["price"], END_QUOTES);
       $product_eplain = htmlspecialchars($_POST["eplain"], END_QUOTES);
 
-      $db = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;,dbname=b1f581c6e88461","77723a9e","heroku_82cd1d27322e58c");
+      $db = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=b1f581c6e88461","77723a9e","heroku_82cd1d27322e58c");
 
       $db->query("INSERT INTO products (name, price, eplain))
                   VALUES (NULL, '$product_name', '$product_price', '$product_eplain')");
