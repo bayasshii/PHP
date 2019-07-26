@@ -25,7 +25,7 @@
     <?php
       $db = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=heroku_82cd1d27322e58c","b1f581c6e88461","77723a9e");
       print "~~~~~~~~~~fin~~~~~~";
-      $ps = $db->query("SELECT * FROM products");
+      $ps = $db->query("SELECT * FROM produc");
       print "~~~~~~~~~~fin~~~~~~";
       if (isset($ps)){
         print "OK";
