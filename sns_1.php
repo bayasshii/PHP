@@ -14,7 +14,7 @@
       print $_POST["price"];
       print $_POST["eplain"];
 
-      $db = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=db_ex1","b1f581c6e88461","77723a9e");
+      $db = new PDO("mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=heroku_82cd1d27322e58c","b1f581c6e88461","77723a9e");
 
       $db->query("INSERT INTO products (id,name,price,eplain))
                   VALUES (NULL, '$product_name', '$product_price', '$product_eplain')");
