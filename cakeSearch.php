@@ -12,7 +12,7 @@
 
       print "{$cake_search}の検索結果";
 
-      $ps = $db->query("SELECT * FROM cakes where title like '%$cake_search%'");
+      $ps = $db->query("SELECT * FROM cakes where title,explain like '%$cake_search%'");
 
       while ($r = $ps->fetch()){
         print "{$r['shop']} {$r['title']} {$r['price']} {$r['explanation']} {$r['url']}<hr>";
