@@ -67,10 +67,6 @@ header.header h1 {
   height: 20px;
   width: 100%;
 }
-.header__search .input__price {
-  height: 20px;
-  width: 40%;
-}
 
 .header__search .btn_submit {
   height: 30px;

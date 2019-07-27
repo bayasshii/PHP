@@ -14,14 +14,16 @@
             <div>
               <input type="text" name="cake_searchWord" placeholder="検索したい単語を入力してね" class="input__word">
             </div>
+            <!--
+            TODO: 料金も絡ませた検索体験
             <div>
-              <p>価格検索！</p>
               <div class="flex center">
                 <input type="text" name="cake_searchMin" class="input__price">
                 <p>〜</p>
                 <input type="text" name="cake_searchMax" class="input__price">
               </div>
             </div>
+            -->
             <div class="m-auto">
               <input type="submit" value="検索" class="btn_submit">
             </div>
