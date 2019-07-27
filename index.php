@@ -28,22 +28,11 @@
     </form>
 
     <?php
-      print "FirstHoge";
       $db = new PDO("mysql:host=k2pdcy98kpcsweia.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=e15c99a3pvrcyx7h","v4ve7yaxpa2rgsm2","clzlpibcmu6fn5ks");
-
-      print "SecondHoge";
       $tb = $db->query("SELECT * FROM cakes");
 
-      print "ThirdHoge";
-
-      while ($newtd = $tb->fetch()){
-        print "YonHoge";
-        $jsoncalm = $newtb['details'];
-        $calm = mb_convert_encoding($jsoncalm, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
-        $r = json_decode($calm, true);
-        print "GoHoge";
-        print "{$r['url']} {$r['price']} {$r['title']} {$r['explain']} <hr>";
-        print "RokuHoge";
+      while ($r = $tb->fetch()){
+        print "{$r['shop']} {$r['title']} {$r['price']} {$r['explanation']} {$r['url']}<hr>";
       }
     ?>
   </body>
