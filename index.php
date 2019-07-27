@@ -11,20 +11,18 @@
         <h1>美味しいケーキの検索サイト</h1>
         <div class="header__search">
           <form action="cakeSearch.php" method="post">
-            <div>
+            <div class="flex">
               <input type="text" name="cake_searchWord" placeholder="検索したい単語を入力してね" class="input__word">
-            </div>
-            <!--
-            TODO: 料金も絡ませた検索体験
-            <div>
-              <div class="flex center">
-                <input type="text" name="cake_searchMin" class="input__price">
-                <p>〜</p>
-                <input type="text" name="cake_searchMax" class="input__price">
+              <!--
+              TODO: 料金も絡ませた検索体験
+              <div>
+                <div class="flex center">
+                  <input type="text" name="cake_searchMin" class="input__price">
+                  <p>〜</p>
+                  <input type="text" name="cake_searchMax" class="input__price">
+                </div>
               </div>
-            </div>
-            -->
-            <div class="m-auto">
+              -->
               <input type="submit" value="検索" class="btn_submit">
             </div>
           </form>
