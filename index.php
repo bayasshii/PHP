@@ -74,7 +74,7 @@
           </div>
           <div>
             <p>値段(円)</p>
-            <input type="text" name="cake_price">
+            <input type="int" name="cake_price">
           </div>
           <div>
             <p>画像URL</p>
