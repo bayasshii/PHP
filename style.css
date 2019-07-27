@@ -36,9 +36,6 @@ input:focus {
   margin: auto;
 }
 
-.mt-10 {
-  margin-top: 10px;
-}
 
 .center {
   text-align: center;
@@ -69,12 +66,13 @@ header.header h1 {
 
 .header__search .input__word {
   height: 20px;
-  width: 100%;
+  width: 70%;
 }
 
 .header__search .btn_submit {
   height: 30px;
-  width: 50%;
+  width: 20%;
+  margin-right: 10%
   background: #fafafa;
   color: rgb(200, 20, 20)
 }
