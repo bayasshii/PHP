@@ -29,6 +29,34 @@
         </div>
       </header>
 
+      <?php
+
+        $db = new PDO("mysql:host=k2pdcy98kpcsweia.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=e15c99a3pvrcyx7h","v4ve7yaxpa2rgsm2","clzlpibcmu6fn5ks");
+
+        $tb = $db->query("SELECT * FROM cakes");
+
+        while ($r = $tb->fetch()){
+          print "
+          <div class='cakeContents'>
+            <div class='flex'>
+              <div class='cakeContents__left'>
+                <div class='cakeContents--title'>
+                  <h2>{$r['title']}</h2>
+                </div>
+                <div class='cakeContents--shop'>{$r['shop']}</div>
+                <div class='cakeContents--price'>{$r['price']}円</div>
+              </div>
+              <div class='cakeContents__right'>
+                <div class='cakeContents--url'><img src='https://treeethreee.s3-ap-northeast-1.amazonaws.com/ichigoFTHG4922_TP_V.jpg' alt='cakeImg'></div>
+              </div>
+            </div>
+            <div class='cakeContents--explanation'>
+              <p>{$r['explanation']}</p>
+            </div>
+          </div>
+          ";
+        }
+      ?>
       <main class="main">
         <form action="cakeWrite.php" method="post">
           <div>
@@ -52,39 +80,10 @@
             <input type="text" name="cake_url">
           </div>
           <div>
-            <input type="submit" value="送信！" class="submit_btn">
+            <input type="submit" value="追加する" class="submit_btn">
           </div>
         </form>
       </main>
-
-        <?php
-
-          $db = new PDO("mysql:host=k2pdcy98kpcsweia.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=e15c99a3pvrcyx7h","v4ve7yaxpa2rgsm2","clzlpibcmu6fn5ks");
-
-          $tb = $db->query("SELECT * FROM cakes");
-
-          while ($r = $tb->fetch()){
-            print "
-            <div class='cakeContents'>
-              <div class='flex'>
-                <div class='cakeContents__left'>
-                  <div class='cakeContents--title'>
-                    <h2>{$r['title']}</h2>
-                  </div>
-                  <div class='cakeContents--shop'>{$r['shop']}</div>
-                  <div class='cakeContents--price'>{$r['price']}円</div>
-                </div>
-                <div class='cakeContents__right'>
-                  <div class='cakeContents--url'><img src='https://treeethreee.s3-ap-northeast-1.amazonaws.com/ichigoFTHG4922_TP_V.jpg' alt='cakeImg'></div>
-                </div>
-              </div>
-              <div class='cakeContents--explanation'>
-                <p>{$r['explanation']}</p>
-              </div>
-            </div>
-            ";
-          }
-        ?>
     </div>
   </body>
 </html>
