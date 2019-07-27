@@ -40,7 +40,7 @@
             </div>
             <div class='cakeContents--explanation'>
               <p>{$r['explanation']}</p>
-              $r['url']
+              {$r['url']}
             </div>
           </div>
           ";
