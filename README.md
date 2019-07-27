@@ -9,3 +9,4 @@ https://php-study-teamlab.herokuapp.com/
 ・少し複雑な検索機能の実装<br>
 ・店舗の概念の導入(ソート機能を実装する)<br>
 ・仮想開発環境の構築
+・laravelなどのフレームワークの導入
