@@ -52,6 +52,7 @@
               </div>
             </div>
             <div class='cakeContents--explanation'>{$r['explanation']}</div>
+            {$r['url']}
           </div>
           ";
         }
