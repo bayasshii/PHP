@@ -44,6 +44,11 @@ input:focus {
 .center {
   text-align: center;
 }
+
+.wrap {
+  padding-bottom: 50px;
+}
+
 /* header */
 
 header.header {
@@ -94,6 +99,8 @@ main.main {
 .main form {
   width: 300px;
   margin: auto;
+  border: 1px solid #666;
+  padding: 20px;
 }
 
 .cakeContents {
@@ -106,6 +113,7 @@ main.main {
 
 .cakeContents:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .cakeContents__left {
