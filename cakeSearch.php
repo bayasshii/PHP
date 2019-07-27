@@ -5,7 +5,7 @@
     <title>ケーキ検索</title>
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
+  <body class="center">
     <?php
       $cake_searchWord = htmlspecialchars($_POST["cake_searchWord"],ENT_QUOTES);
       /*
@@ -21,7 +21,6 @@
       $ps = $db->query("SELECT * FROM cakes WHERE title like '%$cake_searchWord%'");
 
       if (isset($ps)){
-
         while ($r = $ps->fetch()){
           print "
           <div class='cakeContents'>
@@ -44,7 +43,7 @@
           ";
         }
       }else{
-        print"検索できませんでした。"
+        print"検索できませんでした。";
       }
       ?>
 
