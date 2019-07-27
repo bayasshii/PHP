@@ -146,6 +146,10 @@ main.main {
   padding-right: 20px;
 }
 
+.mini {
+  font-size: 8px;
+}
+
 .cakeContents__right {
   width: 100%;
   position: relative;

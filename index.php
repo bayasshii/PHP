@@ -77,7 +77,7 @@
             <input type="text" name="cake_price">
           </div>
           <div>
-            <p>画像URL</p>
+            <p>画像URL<span class="mini">例)https://treeethreee.s3-ap-northeast-1.amazonaws.com/sweets_cheesecake.png</span></p>
             <input type="text" name="cake_url">
           </div>
           <div>
