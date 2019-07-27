@@ -12,6 +12,10 @@ div {
   box-sizing: border-box;;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -148,6 +152,7 @@ main.main {
   color: #bbb;
   border-bottom: 1px solid #888;
   margin-bottom: 10px
+  text-align: right;
 }
 
 .cakeContents--price {
