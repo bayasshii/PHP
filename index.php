@@ -26,7 +26,7 @@
 
       print "ThirdHoge";
 
-      while ($newtd = $tb->fetch(){
+      while ($newtd = $tb->fetch()){
         print "YonHoge";
         $jsoncalm = $newtb['details'];
         $r = json_decode($jsoncalm, true);
