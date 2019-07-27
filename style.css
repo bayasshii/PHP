@@ -84,7 +84,14 @@ main.main {
   margin: auto;
 }
 
-.cakeContents__header {
-  background: red;
-  font-size: 16px;
+.cakeContents {
+  width: 30%;
+}
+
+.cakeContents__left {
+  width: 40%;
+}
+
+.cakeContents__right {
+  width: 60%;
 }

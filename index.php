@@ -55,29 +55,32 @@
             <input type="submit" value="送信！">
           </div>
         </form>
+        <div class="flex">
 
-        <?php
+          <?php
 
-          $db = new PDO("mysql:host=k2pdcy98kpcsweia.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=e15c99a3pvrcyx7h","v4ve7yaxpa2rgsm2","clzlpibcmu6fn5ks");
+            $db = new PDO("mysql:host=k2pdcy98kpcsweia.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=e15c99a3pvrcyx7h","v4ve7yaxpa2rgsm2","clzlpibcmu6fn5ks");
 
-          $tb = $db->query("SELECT * FROM cakes");
+            $tb = $db->query("SELECT * FROM cakes");
 
-          while ($r = $tb->fetch()){
-            print "
-            <div class='cakeContents__header'>
-              <div>{$r['title']}</div>
-              <div>{$r['price']}</div>
-            </div>
-            <div>
-              <div><img src={$r['url']} alt='cakeImg'></div>
-            </div>
-            <div class='cakeContents__text'>
-              <div>{$r['explanation']}</div>
-            </div>
-            ";
-          }
+            while ($r = $tb->fetch()){
+              print "
+              <div class='cakeContents flex'>
+                <div class='cakeContents__left'>
+                  <div class='cakeContents--title'>{$r['title']}</div>
+                  <div class='cakeContents--shop'>{$r['shop']}</div>
+                  <div class='cakeContents--explanation'>{$r['explanation']}</div>
+                </div>
+                <div class='cakeContents__right'>
+                  <div class='cakeContents--url'><img src={$r['url']} alt='cakeImg'></div>
+                  <divclass='cakeContents--price'>{$r['price']}</div>
+                </div>
+              </div>
+              ";
+            }
 
-        ?>
+          ?>
+        </div>
       <main>
     </div>
   </body>
