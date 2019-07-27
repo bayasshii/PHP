@@ -6,13 +6,23 @@
   </head>
   <body>
     <?php
-      $cake_search = htmlspecialchars($_POST["cake_search"],ENT_QUOTES);
+      $cake_searchWord = htmlspecialchars($_POST["cake_searchWord"],ENT_QUOTES);
+      $cake_searchPriceMin = htmlspecialchars($_POST["cake_searchPriceMin"],ENT_QUOTES);
+      $cake_searchPriceMax = htmlspecialchars($_POST["cake_searchPriceMax"],ENT_QUOTES);
 
       $db = new PDO("mysql:host=k2pdcy98kpcsweia.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=e15c99a3pvrcyx7h","v4ve7yaxpa2rgsm2","clzlpibcmu6fn5ks");
 
-      print "{$cake_search}の検索結果";
+      print isset($cake_searchWord)?"{$cake_searchWord}』を含む":;
+      print isset($cake_searchPriceMin)?"『{$cake_searchPriceMin}円以上』":;
+      print isset($cake_searchPriceMax)?"『{$cake_searchPriceMax}円以下』":;
+      print isset($cake_searchPriceMax)||isset($cake_searchPriceMin)?"の":;
+      print "ケーキの検索結果";
 
-      $ps = $db->query("SELECT * FROM cakes where title,explain like '%$cake_search%'");
+      $ps = $db->query("SELECT * FROM cakes WHERE
+        title like '%$cake_searchWord%' OR
+        explain like '%$cake_searchWord%' OR
+        price BETWEEN $cake_searchMin AND $cake_searchPriceMax
+        ");
 
       while ($r = $ps->fetch()){
         print "{$r['shop']} {$r['title']} {$r['price']} {$r['explanation']} {$r['url']}<hr>";

@@ -34,7 +34,19 @@
     <form action="cakeSearch.php" method="post">
       <div>
         <p>ケーキ検索！</p>
-        <input type="text" name="cake_search">
+        <input type="text" name="cake_searchWord">
+      </div>
+      <div>
+        <input type="submit" value="検索！">
+      </div>
+    </form>
+
+    <form action="cakeSearch.php" method="post">
+      <div>
+        <p>価格検索！</p>
+        <input type="text" name="cake_searchMin">
+        <p>〜</p>
+        <input type="text" name="cake_searchMax">
       </div>
       <div>
         <input type="submit" value="検索！">
