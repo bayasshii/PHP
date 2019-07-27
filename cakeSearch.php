@@ -14,7 +14,7 @@
 
       $ps = $db->query("SELECT * FROM cakes where title like '%$cake_search%'");
 
-      while ($r = &ps->fetch()){
+      while ($r = $ps->fetch()){
         print "{$r['shop']} {$r['title']} {$r['price']} {$r['explanation']} {$r['url']}<hr>";
       }
       ?>
