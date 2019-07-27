@@ -73,7 +73,7 @@
             <input type="text" name="cake_explanation">
           </div>
           <div>
-            <p>値段</p>
+            <p>値段(円)</p>
             <input type="text" name="cake_price">
           </div>
           <div>
