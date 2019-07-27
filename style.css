@@ -32,6 +32,13 @@ input:focus {
   display: flex;
 }
 
+.m-auto {
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
 /* header */
 
 header.header {
@@ -63,6 +70,11 @@ header.header h1 {
 .header__search .input__price {
   height: 20px;
   width: 30%;
+}
+
+.header__search .btn_submit {
+  height: 30px;
+  width: 50%;
 }
 
 /* main */
