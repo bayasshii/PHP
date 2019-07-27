@@ -79,7 +79,7 @@
                   </div>
                 </div>
                 <div class='cakeContents__right'>
-                  <div class='cakeContents--url'><img src='{$r['url']}' alt='cakeImg'></div>
+                  <div class='cakeContents--url'><img src='$r['url']' alt='cakeImg'></div>
                   <divclass='cakeContents--price'>{$r['price']}</div>
                 </div>
               </div>
