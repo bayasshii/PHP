@@ -52,7 +52,7 @@
             <input type="text" name="cake_url">
           </div>
           <div>
-            <input type="submit" value="送信！">
+            <input type="submit" value="送信！" class="submit_btn">
           </div>
         </form>
       </main>

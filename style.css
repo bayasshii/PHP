@@ -88,6 +88,10 @@ main.main {
   margin: auto;
 }
 
+.main input {
+  border: 1px solid #eee;
+}
+
 .cakeContents {
   width: 30%;
   display: inline-block;
