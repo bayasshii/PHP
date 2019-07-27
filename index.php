@@ -71,16 +71,14 @@
                   <div class='cakeContents--title'>
                     <h2>{$r['title']}</h2>
                   </div>
-                  <div class='cakeContents--shop'>
-                    <p>{$r['shop']}</p>
-                  </div>
+                  <div class='cakeContents--shop'>{$r['shop']}</div>
+                  <div class='cakeContents--price'>{$r['price']}円</div>
                   <div class='cakeContents--explanation'>
                     <p>{$r['explanation']}</p>
                   </div>
                 </div>
                 <div class='cakeContents__right'>
                   <div class='cakeContents--url'><img src='https://treeethreee.s3-ap-northeast-1.amazonaws.com/ichigoFTHG4922_TP_V.jpg' alt='cakeImg'></div>
-                  <div class='cakeContents--price'>{$r['price']}円</div>
                 </div>
               </div>
             </div>

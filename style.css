@@ -103,21 +103,15 @@ main.main {
 }
 
 .cakeContents--shop {
+  font-size: 0.8rem;
+  color: #bbb;
   border-bottom: 1px solid #888;
 }
-.cakeContents--shop p {
-  font-size: 0.8rem;
-  color: #aaa;
+
+.cakeContents--price {
+  border-bottom: 1px solid #888;
 }
 
 .cakeContents--url img {
   width: 100%;
-}
-
-.cakeContents--price {
-  font-size: 1.5rem;
-  color: #efefef;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
 }
