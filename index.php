@@ -39,9 +39,6 @@
       <div>
         <input type="submit" value="検索！">
       </div>
-    </form>
-
-    <form action="cakeSearch.php" method="post">
       <div>
         <p>価格検索！</p>
         <input type="text" name="cake_searchMin">
