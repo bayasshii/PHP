@@ -14,11 +14,20 @@ body {
   width: 100%;
 }
 
+input {
+  -webkit-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 1px rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
 /* header */
 
 header.header {
   background:rgb(200, 20, 20);
-  color: #eee;
+  color: #fafafa;
   width: 100%;
   padding: 30px 0;
   text-align: center;
@@ -29,8 +38,9 @@ header.header h1 {
 }
 
 .header__search {
-  background: #eee;
+  background: #fafafa;
   color: rgb(200, 20, 20);
+  width: 600px;
 }
 
 /* main */

@@ -8,7 +8,7 @@
   <body>
     <div class="wrap">
       <header class="header">
-        <h1>ケーキの検索サイト</h1>
+        <h1>美味しいケーキの検索サイト</h1>
         <div class="header__search">
           <form action="cakeSearch.php" method="post">
             <div>
