@@ -60,6 +60,7 @@
       ?>
       <main class="main">
         <form action="cakeWrite.php" method="post">
+          <h3>新しいケーキを投稿する</h3>
           <div>
             <p>お店</p>
             <input type="text" name="cake_shop">
