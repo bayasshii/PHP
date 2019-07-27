@@ -7,8 +7,8 @@
   <body>
     <form action="cakeWrite.php" method="post">
       <div>
-        <p>商品画像URL</p>
-        <input type="text" name="cake_url">
+        <p>お店</p>
+        <input type="text" name="cake_shop">
       </div>
       <div>
         <p>商品タイトル</p>
@@ -21,6 +21,10 @@
       <div>
         <p>値段</p>
         <input type="text" name="cake_price">
+      </div>
+      <div>
+        <p>商品画像URL</p>
+        <input type="text" name="cake_url">
       </div>
       <div>
         <input type="submit" value="送信！">
