@@ -17,9 +17,11 @@
             </div>
             <div>
               <p>価格検索！</p>
-              <input type="text" name="cake_searchMin">
-              <p>〜</p>
-              <input type="text" name="cake_searchMax">
+              <div class="flex">
+                <input type="text" name="cake_searchMin" class="input__price">
+                <p>〜</p>
+                <input type="text" name="cake_searchMax" class="input__price">
+              </div>
             </div>
             <div>
               <input type="submit" value="検索！">

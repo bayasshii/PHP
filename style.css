@@ -26,6 +26,11 @@ input:focus {
   outline: none;
 }
 
+.flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
 /* header */
 
 header.header {
@@ -52,6 +57,10 @@ header.header h1 {
 }
 
 .header__search .input__word {
+  height: 20px;
+  width: 70%;
+}
+.header__search .input__price {
   height: 20px;
   width: 70%;
 }
