@@ -89,11 +89,15 @@ main.main {
 }
 
 .cakeContents {
-  width: 33%;
+  width: 30%;
   display: inline-block;
   margin: 20px;
   padding: 20px;
   border: 2px solid #888;
+}
+
+.cakeContents:hover {
+  opacity: 0.8;
 }
 
 .cakeContents__left {
