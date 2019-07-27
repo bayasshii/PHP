@@ -6,11 +6,11 @@
   </head>
   <body>
     <?php
-      $cake_shop = htmlspecialchars($_POST["shop"],ENT_QUOTES);
-      $cake_title = htmlspecialchars($_POST["title"],ENT_QUOTES);
-      $cake_price = htmlspecialchars($_POST["price"],ENT_QUOTES);
-      $cake_expanation = htmlspecialchars($_POST["explanation"],ENT_QUOTES);
-      $cake_url = htmlspecialchars($_POST["url"],ENT_QUOTES);
+      $cake_shop = htmlspecialchars($_POST["cake_shop"],ENT_QUOTES);
+      $cake_title = htmlspecialchars($_POST["cake_title"],ENT_QUOTES);
+      $cake_price = htmlspecialchars($_POST["cake_price"],ENT_QUOTES);
+      $cake_expanation = htmlspecialchars($_POST["cake_explanation"],ENT_QUOTES);
+      $cake_url = htmlspecialchars($_POST["cake_url"],ENT_QUOTES);
 
       print $cake_shop;
       print "<hr>";
