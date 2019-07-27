@@ -51,9 +51,7 @@
                 <div class='cakeContents--url'><img src='https://treeethreee.s3-ap-northeast-1.amazonaws.com/ichigoFTHG4922_TP_V.jpg' alt='cakeImg'></div>
               </div>
             </div>
-            <div class='cakeContents--explanation'>
-              <p>{$r['explanation']}</p>
-            </div>
+            <div class='cakeContents--explanation'>{$r['explanation']}</div>
           </div>
           ";
         }
