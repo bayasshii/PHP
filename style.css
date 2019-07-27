@@ -22,7 +22,8 @@ input {
 }
 
 input:focus {
-    border:solid 1px #EEA34A;
+  border:solid 1px #EEA34A;
+  outline: none;
 }
 
 /* header */
@@ -44,6 +45,10 @@ header.header h1 {
   color: rgb(200, 20, 20);
   width: 600px;
   margin: auto;
+  padding: 20px 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
 
 /* main */
