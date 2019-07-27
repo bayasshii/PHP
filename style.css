@@ -9,7 +9,7 @@ html {
 }
 
 div {
-  box-sizing: content-box;
+  box-sizing: border-box;;
 }
 
 body {
@@ -89,7 +89,7 @@ main.main {
 }
 
 .cakeContents {
-  width: 28%;
+  width: 33%;
   display: inline-block;
   margin: 20px;
   padding: 20px;
