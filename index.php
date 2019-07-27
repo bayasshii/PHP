@@ -81,7 +81,7 @@
             <input type="text" name="cake_url">
           </div>
           <div>
-            <input type="submit" value="追加する" class="submit_btn">
+            <input type="submit" value="追加する" class="btn_submit">
           </div>
         </form>
       </main>

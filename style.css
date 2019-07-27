@@ -95,12 +95,17 @@ main.main {
 
 .main input {
   border: 1px solid #eee;
+  width: 100%;
 }
 .main form {
   width: 300px;
   margin: auto;
   border: 1px solid #666;
   padding: 20px;
+}
+
+.main .btn_submit {
+  margin-top: 10px;
 }
 
 .cakeContents {
