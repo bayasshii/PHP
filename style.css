@@ -30,6 +30,10 @@ input:focus {
   outline: none;
 }
 
+.btn_submit:hover {
+  cursor: pointer;
+}
+
 .flex {
   display: -webkit-flex;
   display: flex;
