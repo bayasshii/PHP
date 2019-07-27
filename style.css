@@ -66,7 +66,7 @@ header.header h1 {
 
 .header__search .input__word {
   height: 20px;
-  width: 70%;
+  width: 100%;
 }
 
 .header__search .btn_submit {
