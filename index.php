@@ -56,14 +56,14 @@
 
       while ($r = $tb->fetch()){
         print "
-        <div>
+        <div class='cakeContents__header'>
           <div>{$r['title']}</div>
           <div>{$r['price']}</div>
         </div>
         <div>
-          <div><img src=$r['url']></div>
+          <div>aa</div>
         </div>
-        <div>
+        <div class='cakeContents__text'>
           <div>{$r['explanation']}</div>
         </div>
         ";
