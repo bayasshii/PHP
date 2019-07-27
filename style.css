@@ -51,6 +51,11 @@ header.header h1 {
   border-radius: 3px;
 }
 
+.header__search .input__word {
+  height: 20px;
+  width: 70%;
+}
+
 /* main */
 
 main.main {
