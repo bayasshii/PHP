@@ -5,16 +5,26 @@
     <title>送信</title>
   </head>
   <body>
-    <form action="sns_1.php" method="post">
+    <form action="cakeWrite.php" method="post">
       <div>
-        <p>名前</p>
-        <input type="text" name="name">
+        <p>商品画像URL</p>
+        <input type="text" name="cake_url">
+      </div>
+      <div>
+        <p>商品タイトル</p>
+        <input type="text" name="cake_title">
+      </div>
+      <div>
+        <p>説明文</p>
+        <input type="text" name="cake_explain">
       </div>
       <div>
         <p>値段</p>
-        <input type="text" name="price">
+        <input type="text" name="cake_price">
       </div>
-      <input type="submit" value="送信！">
+      <div>
+        <input type="submit" value="送信！">
+      </div>
     </form>
 
     <?php
