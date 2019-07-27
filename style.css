@@ -27,7 +27,6 @@ input {
 }
 
 input:focus {
-  border:solid 1px #EEA34A;
   outline: none;
 }
 
@@ -95,7 +94,7 @@ main.main {
 
 .main input {
   border: 1px solid #eee;
-  width: 100%;
+  width: calc(100% - 20px);
 }
 .main form {
   width: 300px;
@@ -106,6 +105,8 @@ main.main {
 
 .main .btn_submit {
   margin-top: 10px;
+  background: rgb(200, 20, 20);
+  color: #efefef;
 }
 
 .cakeContents {
