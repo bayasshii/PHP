@@ -158,3 +158,8 @@ main.main {
 .cakeContents--url img {
   width: 100%;
 }
+
+.cakeContents--explanation {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
