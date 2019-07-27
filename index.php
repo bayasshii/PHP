@@ -9,8 +9,9 @@
     <div class="wrap">
       <header class="header">
         <h1>ケーキの検索サイト</h1>
+
       </header>
-      
+
       <main class="main">
         <form action="cakeWrite.php" method="post">
           <div>
