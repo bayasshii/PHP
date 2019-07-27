@@ -47,8 +47,7 @@ header.header h1 {
 }
 
 .header__search {
-  background: #fafafa;
-  color: rgb(200, 20, 20);
+  color:#fafafa;
   width: 600px;
   margin: auto;
   padding: 20px 0;
@@ -63,7 +62,7 @@ header.header h1 {
 }
 .header__search .input__price {
   height: 20px;
-  width: 70%;
+  width: 30%;
 }
 
 /* main */
