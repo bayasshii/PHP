@@ -108,4 +108,6 @@ main.main {
   color: #aaa;
 }
 
-.cakeContents--url
+.cakeContents--url img {
+  width: 100%;
+}
