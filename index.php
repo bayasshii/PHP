@@ -73,13 +73,13 @@
                   </div>
                   <div class='cakeContents--shop'>{$r['shop']}</div>
                   <div class='cakeContents--price'>{$r['price']}円</div>
-                  <div class='cakeContents--explanation'>
-                    <p>{$r['explanation']}</p>
-                  </div>
                 </div>
                 <div class='cakeContents__right'>
                   <div class='cakeContents--url'><img src='https://treeethreee.s3-ap-northeast-1.amazonaws.com/ichigoFTHG4922_TP_V.jpg' alt='cakeImg'></div>
                 </div>
+              </div>
+              <div class='cakeContents--explanation'>
+                <p>{$r['explanation']}</p>
               </div>
             </div>
             ";
