@@ -117,8 +117,9 @@ main.main {
   padding: 20px;
 }
 
-.main h3{
+.main h3 {
   border-bottom: 1px #eee solid;
+}
 
 .main .btn_submit {
   margin-top: 30px;

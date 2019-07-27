@@ -56,6 +56,7 @@
           ";
         }
       ?>
+
       <main class="main">
         <form action="cakeWrite.php" method="post">
           <h3>新しいケーキを投稿する</h3>
