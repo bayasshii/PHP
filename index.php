@@ -23,10 +23,10 @@
       print "SecondHoge";
       $jsondata = $db->query("SELECT * FROM cakes ORDER BY detail");
       print "ThirdHoge";
-      print "YonHoge";
-      print "GoHoge";
       while ($r = $jsonData->fetch()){
+        print "YonHoge";
         $r = json_decode($jsonData);
+        print "GoHoge";
         print "{$r['url']} {$r['price']} {$r['title']} {$r['explain']}<hr>";
       }
     ?>
