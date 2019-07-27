@@ -9,7 +9,23 @@
     <div class="wrap">
       <header class="header">
         <h1>ケーキの検索サイト</h1>
-
+        <div class="header__search">
+          <form action="cakeSearch.php" method="post">
+            <div>
+              <p>ケーキ検索！</p>
+              <input type="text" name="cake_searchWord">
+            </div>
+            <div>
+              <p>価格検索！</p>
+              <input type="text" name="cake_searchMin">
+              <p>〜</p>
+              <input type="text" name="cake_searchMax">
+            </div>
+            <div>
+              <input type="submit" value="検索！">
+            </div>
+          </form>
+        </div>
       </header>
 
       <main class="main">
@@ -36,22 +52,6 @@
           </div>
           <div>
             <input type="submit" value="送信！">
-          </div>
-        </form>
-
-        <form action="cakeSearch.php" method="post">
-          <div>
-            <p>ケーキ検索！</p>
-            <input type="text" name="cake_searchWord">
-          </div>
-          <div>
-            <p>価格検索！</p>
-            <input type="text" name="cake_searchMin">
-            <p>〜</p>
-            <input type="text" name="cake_searchMax">
-          </div>
-          <div>
-            <input type="submit" value="検索！">
           </div>
         </form>
 

@@ -23,6 +23,15 @@ header.header {
   text-align: center;
 }
 
+header.header h1 {
+  font-size: 2rem;
+}
+
+.header__search {
+  background: #eee;
+  color: rgb(200, 20, 20);
+}
+
 /* main */
 
 main.main {
