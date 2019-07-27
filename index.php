@@ -12,8 +12,7 @@
         <div class="header__search">
           <form action="cakeSearch.php" method="post">
             <div>
-              <p>ケーキ検索！</p>
-              <input type="text" name="cake_searchWord" value="入力してね" class="input__word">
+              <input type="text" name="cake_searchWord" placeholder="検索したい単語を入力してね" class="input__word">
             </div>
             <div>
               <p>価格検索！</p>
