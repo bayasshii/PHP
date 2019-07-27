@@ -25,15 +25,6 @@
       $tb = $db->query("SELECT * FROM cakes");
 
       print "ThirdHoge";
-
-      while ($r = $tb->fetch(){
-        print "YonHoge";
-        $json_calm = $tb['details'];
-        $r = json_decode($json_calm, true);
-        $r = $new_tb['details'];
-        print "GoHoge";
-        print "{$r['url']} {$r['price']} {$r['title']} {$r['explain']}<hr>";
-      }
     ?>
   </body>
 </html>
