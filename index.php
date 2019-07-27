@@ -13,7 +13,7 @@
           <form action="cakeSearch.php" method="post">
             <div>
               <p>ケーキ検索！</p>
-              <input type="text" name="cake_searchWord" class="input__word">
+              <input type="text" name="cake_searchWord" value="入力してね" class="input__word">
             </div>
             <div>
               <p>価格検索！</p>
