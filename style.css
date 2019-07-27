@@ -97,3 +97,11 @@ main.main {
 .cakeContents__right {
   width: 60%;
 }
+
+.cakeContents--shop {
+  border-bottom: 1px solid #888;
+}
+.cakeContents--shop p {
+  font-size: 0.8rem;
+  color: #666;
+}

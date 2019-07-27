@@ -65,17 +65,23 @@
 
           while ($r = $tb->fetch()){
             print "
-            <div class='cakeContents flex'>
-              <div class='cakeContents__left'>
-                <div class='cakeContents--title'>
-                  <h2>{$r['title']}</h2>
+            <div class='cakeContents'>
+              <div class="flex">
+                <div class='cakeContents__left'>
+                  <div class='cakeContents--title'>
+                    <h2>{$r['title']}</h2>
+                  </div>
+                  <div class='cakeContents--shop'>
+                    <p>{$r['shop']}</p>
+                  </div>
+                  <div class='cakeContents--explanation'>
+                    <p>{$r['explanation']}</p>
+                  </div>
                 </div>
-                <div class='cakeContents--shop'>{$r['shop']}</div>
-                <div class='cakeContents--explanation'>{$r['explanation']}</div>
-              </div>
-              <div class='cakeContents__right'>
-                <div class='cakeContents--url'><img src={$r['url']} alt='cakeImg'></div>
-                <divclass='cakeContents--price'>{$r['price']}</div>
+                <div class='cakeContents__right'>
+                  <div class='cakeContents--url'><img src={$r['url']} alt='cakeImg'></div>
+                  <divclass='cakeContents--price'>{$r['price']}</div>
+                </div>
               </div>
             </div>
             ";
