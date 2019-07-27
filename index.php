@@ -11,11 +11,11 @@
         <input type="text" name="cake_shop">
       </div>
       <div>
-        <p>商品タイトル</p>
+        <p>ケーキの名前</p>
         <input type="text" name="cake_title">
       </div>
       <div>
-        <p>説明文</p>
+        <p>特徴</p>
         <input type="text" name="cake_explanation">
       </div>
       <div>
@@ -23,11 +23,21 @@
         <input type="text" name="cake_price">
       </div>
       <div>
-        <p>商品画像URL</p>
+        <p>ケーキの画像URL</p>
         <input type="text" name="cake_url">
       </div>
       <div>
         <input type="submit" value="送信！">
+      </div>
+    </form>
+
+    <form action="cakeSearch.php" method="post">
+      <div>
+        <p>ケーキ検索！</p>
+        <input type="text" name="cake_search">
+      </div>
+      <div>
+        <input type="submit" value="検索！">
       </div>
     </form>
 
