@@ -78,7 +78,7 @@
             <input type="text" name="cake_price">
           </div>
           <div>
-            <p>ケーキの画像URL</p>
+            <p>画像URL</p>
             <input type="text" name="cake_url">
           </div>
           <div>

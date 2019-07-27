@@ -133,7 +133,7 @@ main.main {
 }
 
 .cakeContents__left {
-  width: 30%;
+  width: 71%;
   padding-right: 20px;
 }
 
@@ -150,7 +150,8 @@ main.main {
 }
 
 .cakeContents--price {
-  padding: 10px 0;
+  text-align: right;
+  font-size: 1.5rem;
 }
 
 .cakeContents--url img {
