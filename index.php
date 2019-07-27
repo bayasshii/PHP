@@ -55,6 +55,8 @@
             <input type="submit" value="送信！">
           </div>
         </form>
+      </main>
+
         <?php
 
           $db = new PDO("mysql:host=k2pdcy98kpcsweia.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=e15c99a3pvrcyx7h","v4ve7yaxpa2rgsm2","clzlpibcmu6fn5ks");
@@ -65,7 +67,9 @@
             print "
             <div class='cakeContents flex'>
               <div class='cakeContents__left'>
-                <div class='cakeContents--title'>{$r['title']}</div>
+                <div class='cakeContents--title'>
+                  <h2>{$r['title']}</h2>
+                </div>
                 <div class='cakeContents--shop'>{$r['shop']}</div>
                 <div class='cakeContents--explanation'>{$r['explanation']}</div>
               </div>
@@ -77,7 +81,6 @@
             ";
           }
         ?>
-      <main>
     </div>
   </body>
 </html>
