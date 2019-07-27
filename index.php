@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <title>送信</title>
   </head>
   <body>
@@ -54,11 +55,16 @@
 
       while ($r = $tb->fetch()){
         print "
-        <div>{$r['shop']}</div>
-        <div>{$r['title']}</div>
-        <div>{$r['price']}</div>
-        <div>{$r['explanation']}</div>
-        <div>{$r['url']}</div>
+        <div class="cakeContents__header">
+          <div>{$r['title']}</div>
+          <div>{$r['price']}</div>
+        </div>
+        <div>
+          <div><img src=$r['url'] alt="cakeImg"></div>
+        </div>
+        <div class="cakeContents__text">
+          <div>{$r['explanation']}</div>
+        </div>
         ";
       }
     ?>
