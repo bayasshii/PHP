@@ -80,7 +80,7 @@
                 </div>
                 <div class='cakeContents__right'>
                   <div class='cakeContents--url'><img src='https://treeethreee.s3-ap-northeast-1.amazonaws.com/ichigoFTHG4922_TP_V.jpg' alt='cakeImg'></div>
-                  <divclass='cakeContents--price'>{$r['price']}</div>
+                  <divclass='cakeContents--price'>{$r['price']}円</div>
                 </div>
               </div>
             </div>

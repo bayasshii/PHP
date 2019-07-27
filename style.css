@@ -94,10 +94,12 @@ main.main {
 
 .cakeContents__left {
   width: 30%;
+  padding-right: 20px;
 }
 
 .cakeContents__right {
-  width: 60%;
+  width: 100%;
+  position: relative;
 }
 
 .cakeContents--shop {
@@ -110,4 +112,12 @@ main.main {
 
 .cakeContents--url img {
   width: 100%;
+}
+
+.cakeContents--price {
+  font-size: 1.5rem;
+  color: #efefef;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
