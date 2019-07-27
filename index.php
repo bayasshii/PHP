@@ -37,9 +37,6 @@
         <input type="text" name="cake_searchWord">
       </div>
       <div>
-        <input type="submit" value="検索！">
-      </div>
-      <div>
         <p>価格検索！</p>
         <input type="text" name="cake_searchMin">
         <p>〜</p>
