@@ -29,7 +29,8 @@
       while ($newtd = $tb->fetch()){
         print "YonHoge";
         $jsoncalm = $newtb['details'];
-        $r = json_decode($jsoncalm, true);
+        $calm = mb_convert_encoding($jsoncalm, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
+        $r = json_decode($calm, true);
         print "GoHoge";
         print "{$r['url']} {$r['price']} {$r['title']} {$r['explain']} <hr>";
         print "RokuHoge";
