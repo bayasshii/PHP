@@ -22,13 +22,15 @@
       $db = new PDO("mysql:host=k2pdcy98kpcsweia.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=e15c99a3pvrcyx7h","v4ve7yaxpa2rgsm2","clzlpibcmu6fn5ks");
 
       print "SecondHoge";
-      $jsonDatas = $db->query("SELECT * FROM cakes");
+      $tb = $db->query("SELECT * FROM cakes");
 
       print "ThirdHoge";
 
-      while ($r = $jsonDatas->fetch(){
+      while ($r = $tb->fetch(){
         print "YonHoge";
-        $r = json_decode($jsonData, true);
+        $json_calm = $tb['details']
+        $r = json_decode($json_calm, true);
+        $r = $new_tb['details']
         print "GoHoge";
         print "{$r['url']} {$r['price']} {$r['title']} {$r['explain']}<hr>";
       }
