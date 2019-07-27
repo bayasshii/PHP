@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <title>送信</title>
+    <title>ケーキ検索サイト</title>
   </head>
   <body>
     <div class="wrap">
@@ -79,7 +79,7 @@
                   </div>
                 </div>
                 <div class='cakeContents__right'>
-                  <div class='cakeContents--url'><img src={$r['url']} alt='cakeImg'></div>
+                  <div class='cakeContents--url'><img src='{$r['url']}' alt='cakeImg'></div>
                   <divclass='cakeContents--price'>{$r['price']}</div>
                 </div>
               </div>
