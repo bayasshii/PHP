@@ -24,9 +24,9 @@
       $jsondata = $db->query("SELECT * FROM cakes ORDER BY detail");
       print "ThirdHoge";
       print "YonHoge";
-      $ps = json_decode($jsonData);
       print "GoHoge";
-      while ($r = $ps->fetch()){
+      while ($r = $jsonData->fetch()){
+        $r = json_decode($jsonData);
         print "{$r['url']} {$r['price']} {$r['title']} {$r['explain']}<hr>";
       }
     ?>
