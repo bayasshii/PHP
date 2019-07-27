@@ -85,12 +85,14 @@ header.header h1 {
 
 main.main {
   width: 1200px;
+  margin: auto;
 }
 
 .main input {
   border: 1px solid #eee;
 }
 .main form {
+  width: 300px;
   margin: auto;
 }
 
