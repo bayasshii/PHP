@@ -61,13 +61,14 @@
           <div>{$r['price']}</div>
         </div>
         <div>
-          <div>aa</div>
+          <div><img src={$r['url']} alt='cakeImg'></div>
         </div>
         <div class='cakeContents__text'>
           <div>{$r['explanation']}</div>
         </div>
         ";
       }
+
     ?>
   </body>
 </html>
