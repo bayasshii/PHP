@@ -23,7 +23,7 @@
               </div>
             </div>
             <div class="m-auto">
-              <input type="submit" value="検索！" class="btn_submit">
+              <input type="submit" value="検索" class="btn_submit">
             </div>
           </form>
         </div>
