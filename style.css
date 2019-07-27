@@ -96,6 +96,7 @@ main.main {
   border: 1px solid #eee;
   width: calc(100% - 20px);
 }
+
 .main form {
   width: 300px;
   margin: auto;
@@ -107,6 +108,7 @@ main.main {
   margin-top: 10px;
   background: rgb(200, 20, 20);
   color: #efefef;
+  width: 100%;
 }
 
 .cakeContents {
