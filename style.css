@@ -88,6 +88,7 @@ main.main {
   width: 30%;
   display: inline-block;
   margin: 20px;
+  padding: 20px;
   border: 2px solid #888;
 }
 
@@ -106,3 +107,5 @@ main.main {
   font-size: 0.8rem;
   color: #666;
 }
+
+.cakeContents--url
