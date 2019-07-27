@@ -5,7 +5,7 @@
     <title>ケーキ検索</title>
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
-  <body class="center">
+  <body>
     <?php
       $cake_searchWord = htmlspecialchars($_POST["cake_searchWord"],ENT_QUOTES);
       /*
@@ -16,7 +16,7 @@
 
       $db = new PDO("mysql:host=k2pdcy98kpcsweia.cbetxkdyhwsb.us-east-1.rds.amazonaws.com;dbname=e15c99a3pvrcyx7h","v4ve7yaxpa2rgsm2","clzlpibcmu6fn5ks");
 
-      print "<h1>『{$cake_searchWord}』に関連するケーキの検索結果</h1>";
+      print "<h1 class='center'>『{$cake_searchWord}』に関連するケーキの検索結果</h1>";
 
       $ps = $db->query("SELECT * FROM cakes WHERE title like '%$cake_searchWord%'");
 
@@ -49,7 +49,7 @@
       }
       ?>
 
-      <div><a href="/">一覧に戻る！</a></div>
+      <div class="center"><a href="/">一覧に戻る！</a></div>
 
     </body>
   </html>
