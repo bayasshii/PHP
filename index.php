@@ -66,7 +66,7 @@
           while ($r = $tb->fetch()){
             print "
             <div class='cakeContents'>
-              <div class="flex">
+              <div class='flex'>
                 <div class='cakeContents__left'>
                   <div class='cakeContents--title'>
                     <h2>{$r['title']}</h2>
