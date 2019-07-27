@@ -86,6 +86,8 @@ main.main {
 
 .cakeContents {
   width: 30%;
+  display: inline-block;
+  margin: 20px;
 }
 
 .cakeContents__left {
