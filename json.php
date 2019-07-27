@@ -14,10 +14,12 @@ $sth->execute();
 
 $cakeData = array();
 
-while($row = $sth->fetch(PDO::FETCH_ASSOC)){
+while($row = $sth['detail']->fetch(PDO::FETCH_ASSOC)){
     $cakeData[]=array(
-    'shopName'=>$row['shopName'],
-    'detail'=>$row['detail']
+    'url'=>$row['cake_url'],
+    'price'=>$row['cake_price'],
+    'title'=>$row['cake_title'],
+    'explain'=>$row['cake_explain']
     );
 }
 
