@@ -16,7 +16,7 @@
       </div>
       <div>
         <p>説明文</p>
-        <input type="text" name="cake_explain">
+        <input type="text" name="cake_explanation">
       </div>
       <div>
         <p>値段</p>
