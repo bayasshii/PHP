@@ -35,7 +35,7 @@
                 <div class='cakeContents--price'>{$r['price']}円</div>
               </div>
               <div class='cakeContents__right'>
-                <div class='cakeContents--url'><img src='$r['url']' alt='cakeImg'></div>
+                <div class='cakeContents--url'><img src='{$r['url']}' alt='cakeImg'></div>
               </div>
             </div>
             <div class='cakeContents--explanation'>
