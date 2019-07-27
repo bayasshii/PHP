@@ -4,8 +4,14 @@
 /* header */
 
 header.header {
-  background:
+  background:rgb(200, 20, 20);
+  color: #eee;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
 }
+
+/* main */
 
 main.main {
   width: 1200px;
