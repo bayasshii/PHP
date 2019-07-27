@@ -23,8 +23,7 @@
       print "SecondHoge";
       $jsondata = $db->query("SELECT * FROM cakes ORDER BY details DESC");
       print "ThirdHoge";
-      echo $jsondata;
-      while ($r = $jsonData->fetch()){
+      while ($r = $jsonData->fetchObject(){
         print "YonHoge";
         $r = json_decode($jsonData);
         print "GoHoge";
