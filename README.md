@@ -8,3 +8,4 @@ https://php-study-teamlab.herokuapp.com/
 ・データのjson型化<br>
 ・少し複雑な検索機能も実装
 ・店舗の概念の導入(ソート機能を実装する)<br>
+・仮装開発環境の構築
