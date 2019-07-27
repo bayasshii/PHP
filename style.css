@@ -148,6 +148,8 @@ main.main {
 
 .mini {
   font-size: 8px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 .cakeContents__right {
